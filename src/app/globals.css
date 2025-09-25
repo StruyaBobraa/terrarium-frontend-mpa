@@ -1,14 +1,40 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: 250, 238, 225;
+  --foreground: 96, 112, 116;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 96, 112, 116;
+    --foreground: 250, 238, 225;
   }
 }
+
+:root::-webkit-scrollbar {
+  width: 10px !important;
+  background: rgb(var(--background));
+  opacity: 0.8;
+}
+
+:root::-webkit-scrollbar-thumb  {
+  width: 10px !important;
+  background-color: rgb(var(--foreground));
+  border-radius: 50px;
+}
+
+@media (max-width: 426px) {
+  :root::-webkit-scrollbar {
+    width: 5px !important;
+    background: transparent;
+    opacity: 0.8;
+  }
+
+  :root::-webkit-scrollbar-thumb  {
+    width: 5px !important;
+    border-radius: 5px;
+  }
+}
+
 
 html,
 body {
@@ -17,8 +43,8 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: rgb(var(--foreground));
+  background: rgb(var(--background));
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

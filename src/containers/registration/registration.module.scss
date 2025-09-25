@@ -1,0 +1,53 @@
+.Wrapper {
+    position: relative;
+    color: rgb(var(--foreground));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0;
+    z-index: 3;
+    width: 100%;
+}
+
+.Wrapper h1 {
+    margin-bottom: 0;
+}
+
+.Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.Form p {
+    font-size: 28px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: rgb(var(--foreground));
+    margin-top: 5%;
+    margin-bottom: 1%;
+    padding-left: 38px;
+    width: 100%;
+}
+
+.Form div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 426px) {
+    .Form p {
+        padding-left: 10px;
+        letter-spacing: -1px;
+        font-size: 24px;
+    }
+    .Form {
+        margin-bottom: 6%;
+    }
+}

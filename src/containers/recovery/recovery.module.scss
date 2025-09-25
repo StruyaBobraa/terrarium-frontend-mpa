@@ -1,0 +1,55 @@
+.Wrapper {
+    position: relative;
+    color: rgb(var(--foreground));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Montserrat, sans-serif;
+    margin-top: 0;
+    z-index: 3;
+    width: 100%;
+}
+
+.Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Form h1 {
+    font-weight: 400;
+    margin-bottom: 1%;
+}
+
+.Form p {
+    font-size: 18px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: rgb(var(--foreground));
+    margin-top: 1%;
+    margin-bottom: 3%;
+    text-align: center;
+    width: 100%;
+}
+
+.Form input {
+    margin-bottom: 2%;
+}
+
+.Form a {
+    margin-top: 7%;
+}
+
+
+.Form span {
+    font-size: 28px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: rgb(var(--foreground));
+    margin-top: 5%;
+    margin-bottom: 1%;
+    padding-left: 38px;
+    display: block;
+}

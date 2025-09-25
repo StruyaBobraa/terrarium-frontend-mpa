@@ -1,0 +1,112 @@
+.Wrapper {
+    position: relative;
+    color: rgb(var(--foreground));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3%;
+    z-index: 3;
+    width: 100%;
+}
+
+.Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1.5%;
+}
+
+.label {
+    width: 15%;
+    text-align: center;
+    color: rgb(var(--foreground));
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+}
+
+.Form input {
+    margin-bottom: 0.7%;
+}
+
+.Form a {
+    margin-top: 1.5%;
+}
+
+.Form p {
+    text-align: center;
+    color: rgb(var(--foreground));
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+}
+
+.other {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.other p {
+    text-align: center;
+    color: rgb(var(--foreground));
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+}
+
+.others {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1%;
+    width: 300px;
+}
+
+.others button {
+    width: 77px;
+    height: 77px;
+    border-radius: 77px;
+    background: rgb(var(--foreground));
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.register {
+    text-align: center;
+    color: rgb(var(--foreground));
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+}
+
+@media (max-width: 426px) {
+    .other {
+        margin-top: 6%;
+    }
+    .others {
+        margin-top: 3%;
+    }
+    .register {
+        margin-top: 2%;
+    }
+    .Wrapper {
+        margin-top: 8%;
+    }
+    .label {
+        width: 60%;
+    }
+    .Form {
+        margin-top: 5%;
+    }
+    .Form input {
+        margin-bottom: 4%;
+    }
+    .Form a {
+        margin-top: 5%;
+    }
+}

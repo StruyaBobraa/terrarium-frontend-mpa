@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+.Button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Montserrat, sans-serif;
+  background-color: rgb(var(--foreground));
+  color: rgb(var(--background));
+  padding: 14px 32px;
+  border-radius: 50px;
+  transition: all .3s ease;
+  min-width: 210px;
+  display: block;
+  text-align: center;
+}
+
+.Button:hover,
+.Button:focus {
+  opacity: 0.7;
+}
