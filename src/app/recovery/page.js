@@ -2,14 +2,13 @@
 import dynamic from "next/dynamic";
 import styles from "../page.module.css";
 import Navbar from "@/containers/navbar/navbar";
-const Registration = dynamic (() => import("@/containers/registration/registration"));
-
+const Recovery = dynamic (() => import("@/containers/recovery/recovery"));
 
 export default function RegistrationPage() {
     return (
         <div className={styles.Layout}>
             <Navbar/>
-            <Registration/>
+            <Recovery/>
         </div>
     );
 }

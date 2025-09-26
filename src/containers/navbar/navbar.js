@@ -5,12 +5,12 @@ import Header from '@/components/Header/Header'
 const Navbar = () => {
     return (
         <div className={classes.Wrapper}>
-            <Header lineHeight={"32px"} fontSize={30} text="*Logo*"/>
+            <Header lineHeight={"32px"} fontSize={30} text="Condifigurator"/>
             <div className={classes.Links}>
-                <p>*Link 1*</p>
-                <p>*Link 2*</p>
-                <p>*Link 3*</p>
-                <h1>*Auth status*</h1>
+                <p>Made by:</p>
+                <p>@c2btx</p>
+                <p>@undeadpelmen</p>
+                <h1>Unauthorised</h1>
             </div>
         </div>
     )

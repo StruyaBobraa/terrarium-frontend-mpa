@@ -6,7 +6,7 @@ import Input from "@/components/ui/input/input";
 import Anchor from "@/components/ui/anchor/anchor";
 
 const Greeting = (props) => {
-    const [number, setNumber] = useState("")
+    const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
 
     return (
@@ -14,10 +14,10 @@ const Greeting = (props) => {
             <Header fontSize={56} text="Доброе утро!"/>
             <p className={classes.label}>Пожалуйста, войдите в свой аккаунт чтобы продолжить</p>
             <div className={classes.Form}>
-                <Input value={number} onChange={(e) => setNumber(e.target.value)} placeholder="Номер телефона" type="text"/>
+                <Input value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" type="email"/>
                 <Input value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Пароль" type="password"/>
-                <p>Забыли пароль? <Anchor onClick={props.onRecoveryClick} text="Восстановить"/></p>
-                <Button onClick={() => props.onLoginClick(email)} textContent="Войти" type="gray"/>
+                <p>Забыли пароль? <Anchor href="/recovery" text="Восстановить"/></p>
+                <Button onClick={() => props.onLoginClick(email, password)} textContent="Войти" type="gray"/>
             </div>
             <div className={classes.other}>
                 <p>Другие способы входа</p>
